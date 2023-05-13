@@ -1,18 +1,9 @@
-import "./reset.css";
 import "./App.css";
-import "./styles.css";
 // import { Pokemon } from "./cards/pokemon";
 
 function App() {
   return (
     <div className="App">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;700&display=swap"
-        rel="stylesheet"
-      ></link>
-
       <body className="container">
         <h1>Charmander</h1>
         <h3>#004</h3>
