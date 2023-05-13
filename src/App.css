@@ -12,6 +12,12 @@
   --base: 24px;
   --medium: 32px;
   --large: 64px;
+  --font-size-tiny: 10px;
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+  --font-size-big: 24px;
+  --line-height-small: 16px;
+  --line-height-big: 32px;
   --bold: 700;
   --regular: 400;
 }
@@ -23,34 +29,36 @@ body {
   height: 100vh;
 }
 
-.container {
+.card__container {
   /* display: flex; */
   /* flex-direction: column; */
   width: 300px;
   height: 400px;
   background-color: var(--fire-color);
   border-radius: 12px;
-  position: relative;
 }
 
-.header {
+.card__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  border: 1px solid red;
+.card__header h1 {
   margin-top: var(--base);
   margin-left: var(--mini);
   margin-right: var(--large);
-  font-size: var(--base);
+  font-size: var(--font-size-big);
+  line-height: var(--line-height-big);
   font-weight: var(--bold);
   color: var(--white);
 }
 
-p {
-  /* position: absolute; */
-  margin-top: 20px;
-  margin-right: 20px;
+.card__header span {
+  margin-top: var(--base);
+  margin-right: var(--mini);
   color: var(--white);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-big);
+  font-weight: var(--bold);
 }

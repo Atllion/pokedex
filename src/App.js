@@ -7,7 +7,7 @@ function App() {
       <main className="card__container">
         <section className="card__header">
           <h1>Charmander</h1>
-          <span className="card__pokemon-number">#004</span>
+          <span>#004</span>
         </section>
 
         <img src="charmander.jpg" alt="charmander" />
