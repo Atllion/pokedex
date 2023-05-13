@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <body className="container">
+      <main className="container">
         <h1>Charmander</h1>
         <h3>#004</h3>
         <img src="charmander.jpg" alt="charmander" />
@@ -26,7 +26,7 @@ function App() {
             spout from the top of its tail.
           </p>
         </section>
-      </body>
+      </main>
     </div>
   );
 }
