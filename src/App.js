@@ -10,7 +10,7 @@ function App() {
           <span>#004</span>
         </section>
 
-        <img src="charmander.jpg" alt="charmander" />
+        {/* <img src="charmander.jpg" alt="charmander" /> */}
 
         <section className="card__info">
           <section className="card__type">
@@ -42,7 +42,6 @@ function App() {
               </div>
             </section>
           </section>
-
           <section className="card__description">
             <p>
               It has a preference for hot things. When it rains, steam is said
