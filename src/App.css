@@ -115,3 +115,21 @@ body {
   align-items: center;
   gap: 8px;
 }
+
+.card__measure-values span {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--regular);
+  line-height: var(--line-height-small);
+  color: var(--dark-gray);
+}
+
+.card__measure-span {
+  display: flex;
+  justify-content: center;
+}
+.card__measure-span span {
+  font-size: 8px;
+  font-weight: var(--regular);
+  line-height: var(--line-height-small);
+  color: var(--medium-gray);
+}

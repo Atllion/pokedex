@@ -9,7 +9,7 @@ function App() {
           <span>#004</span>
         </section>
         <section className="card__pokemon_img">
-          {/* <img src="charmander.jpg" alt="charmander" /> */}
+          {/* <img src="/icons/charmander-imagen.svg" alt="charmander" /> */}
         </section>
 
         <section className="card__info">
@@ -24,7 +24,7 @@ function App() {
           <section className="card__size-pokemon">
             <section className="card__measure">
               <div className="card__measure-values">
-                <img src="" alt="weight-icon"></img>
+                <img src="/icons/wigth-icon.svg" alt="weight-icon"></img>
                 <span>8,5 kg</span>
               </div>
               <div className="card__measure-span">
@@ -36,7 +36,7 @@ function App() {
 
             <section className="card__measure">
               <div className="card__measure-values">
-                <img src="" alt="weight-icon"></img>
+                <img src="/icons/heigth-icon.svg" alt="heigth-icon"></img>
                 <span>0,6 m</span>
               </div>
               <div className="card__measure-span">
