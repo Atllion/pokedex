@@ -1,5 +1,4 @@
 import "./App.css";
-// import { Pokemon } from "./cards/pokemon";
 
 function App() {
   return (
