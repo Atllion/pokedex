@@ -30,6 +30,7 @@ body {
 }
 
 .card__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,4 +133,28 @@ body {
   font-weight: var(--regular);
   line-height: var(--line-height-small);
   color: var(--medium-gray);
+}
+
+.vertical-line {
+  border-left: 1px solid var(--light-gray);
+  display: block;
+  height: 48px;
+}
+
+.card__description {
+  margin: 0 var(--base) 20px var(--base);
+}
+
+.card__description p {
+  font-size: var(--font-size-tiny);
+  font-weight: var(--regular);
+  line-height: var(--line-height-small);
+  color: var(--dark-gray);
+  text-align: justify;
+}
+
+.card__pokemon_img img {
+  position: absolute;
+  top: 64px;
+  left: 86px;
 }

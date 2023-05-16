@@ -9,7 +9,7 @@ function App() {
           <span>#004</span>
         </section>
         <section className="card__pokemon_img">
-          {/* <img src="/icons/charmander-imagen.svg" alt="charmander" /> */}
+          <img src="/icons/charmander-imagen.svg" alt="charmander" />
         </section>
 
         <section className="card__info">
