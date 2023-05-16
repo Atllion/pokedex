@@ -1,0 +1,1 @@
+const miArray = ["asdfsadf", "asdfsadfsa"];
