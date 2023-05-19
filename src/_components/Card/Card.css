@@ -84,11 +84,21 @@
   background-color: violet;
 }
 
-.card__about h2 {
+.card__about {
   font-size: var(--font-size-medium);
   font-weight: var(--bold);
   line-height: var(--line-height-small);
   color: var(--fire-color);
+}
+
+.card__about--fire {
+  color: var(--fire-color);
+}
+.card__about--grass {
+  color: var(--grass-color);
+}
+.card__about--water {
+  color: var(--water-color);
 }
 
 .card__size-pokemon {
