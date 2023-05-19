@@ -3,13 +3,13 @@ import { Card } from "./_components/Card/Card";
 
 const pokemon = {
   id: "001",
-  name: "Bulbasaur",
+  name: "Charmander",
   height: "4.3 m",
   weight: "6.5 kg",
   types: ["grass", "poison"],
   src: "https://...",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet facilisis mi. Integer eget urna eu mauris scelerisque ornare. Nam at finibus purus.",
+    "It has a preference for hot things. When it rains, steam is said to spout from the top of its tail.",
 };
 
 function App() {

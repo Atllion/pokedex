@@ -1,15 +1,25 @@
 .card__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
   height: 400px;
-  background-color: var(--fire-color);
   border-radius: 12px;
+  position: relative;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
+.card__container--fire {
+  background-color: var(--fire-color);
+}
+
+.card__container--grass {
+  background-color: var(--grass-color);
+}
+
+.card__container--water {
+  background-color: var(--water-color);
+}
 .card__header {
   display: flex;
   justify-content: space-between;
@@ -31,8 +41,8 @@
   margin-right: var(--mini);
   color: var(--white);
   font-size: var(--font-size-small);
-  line-height: var(--line-height-big);
   font-weight: var(--bold);
+  line-height: var(--line-height-big);
 }
 
 .card__info {
@@ -51,26 +61,44 @@
   gap: var(--mini);
 }
 
-.card__type h2 {
-  background-color: var(--fire-color);
+.card__type__pill {
   padding: 2px 8px;
-  border-radius: 10px;
-  color: var(--white);
   font-size: var(--font-size-tiny);
   font-weight: var(--bold);
   line-height: var(--line-height-small);
+  background-color: var(--fire-color);
+  border-radius: 10px;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.card__type__pill--fire {
+  background-color: var(--fire-color);
+}
+
+.card__type__pill--grass {
+  background-color: green;
+}
+
+.card__type__pill--poison {
+  background-color: violet;
 }
 
 .card__about h2 {
-  color: var(--fire-color);
   font-size: var(--font-size-medium);
   font-weight: var(--bold);
   line-height: var(--line-height-small);
+  color: var(--fire-color);
 }
 
 .card__size-pokemon {
   display: flex;
   gap: 24px;
+}
+.vertical-line {
+  border-left: 1px solid var(--light-gray);
+  display: block;
+  height: 48px;
 }
 
 .card__measure {
@@ -104,12 +132,6 @@
   color: var(--medium-gray);
 }
 
-.vertical-line {
-  border-left: 1px solid var(--light-gray);
-  display: block;
-  height: 48px;
-}
-
 .card__description {
   margin: 0 var(--base) 20px var(--base);
 }
@@ -118,12 +140,14 @@
   font-size: var(--font-size-tiny);
   font-weight: var(--regular);
   line-height: var(--line-height-small);
-  color: var(--dark-gray);
   text-align: justify;
+  color: var(--dark-gray);
 }
 
-.card__pokemon_img img {
+.card__pokemon-img img {
   position: absolute;
   top: 64px;
   left: 86px;
+  width: 150px;
+  height: 150px;
 }
