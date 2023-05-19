@@ -10,10 +10,7 @@ export const Card = ({ pokemon }) => {
         <span>{pokemon.id}</span>
       </section>
       <section className="card__pokemon-img">
-        <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-          alt="charmander"
-        />
+        <img src={pokemon.src} alt="charmander" />
       </section>
 
       <section className="card__info">

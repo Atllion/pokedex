@@ -12,16 +12,17 @@ function App() {
 
     const charmander = await response.json();
     console.log(charmander);
-    // console.log(charmander.types);
+    console.log(charmander.types);
 
     return {
       id: charmander.id,
       name: charmander.name,
-      weight: "irrelevantWeight",
-      height: "irrelevantHeight",
-      types: ["irrelevantType"],
-      src: "irrelevantSrc",
-      description: "irrelevantDescription",
+      weight: charmander.weight,
+      height: charmander.height,
+      types: charmander.types.map(({ type }) => type.name),
+      src: charmander.sprites.front_default,
+      description:
+        "It has a preference for hot things. When it rains, steam is said to spout from the top of its tail.",
     };
   };
 
