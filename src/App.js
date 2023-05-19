@@ -1,35 +1,55 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 import { Card } from "./_components/Card/Card";
-import { useState, useEffect } from "react";
-
-const pokemon = {
-  id: "004",
-  name: "Charmander",
-  height: "4.3 m",
-  weight: "6.5 kg",
-  types: ["grass", "poison"],
-  src: "https://...",
-  description:
-    "It has a preference for hot things. When it rains, steam is said to spout from the top of its tail.",
-};
 
 function App() {
-  const [pokemons, setPokemon] = useState();
-  useEffect(() => {
-    const fetchPokemons = async () => {
-      const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon/charmander"
-      );
-      const allPokemons = await response.json();
-      setPokemon(allPokemons);
-      console.log({ pokemons });
+  const [pokemons, setPokemons] = useState([]);
+
+  const fetchPokemons = async () => {
+    const response = await fetch(
+      "https://pokeapi.co/api/v2/pokemon/charmander"
+    );
+
+    const charmander = await response.json();
+    console.log(charmander);
+    // console.log(charmander.types);
+
+    return {
+      id: charmander.id,
+      name: charmander.name,
+      weight: "irrelevantWeight",
+      height: "irrelevantHeight",
+      types: ["irrelevantType"],
+      src: "irrelevantSrc",
+      description: "irrelevantDescription",
     };
-    fetchPokemons();
+  };
+
+  useEffect(() => {
+    const onLoad = async () => {
+      const charmander = await fetchPokemons();
+      setPokemons([charmander]);
+    };
+
+    onLoad();
   }, []);
 
   return (
     <div className="App">
-      <Card pokemon={pokemon} />
+      <div className="pokedex__container">
+        <nav className="pokedex__nav-bar">
+          <img src="/Icons/pokeball-icon.svg" alt="pokeball-icon" />
+          <h1>My Pokedex</h1>
+        </nav>
+
+        <main className="cards__container">
+          {pokemons.map((pokemon) => (
+            <Card pokemon={pokemon} />
+          ))}
+        </main>
+
+        <footer>Imagen Footer</footer>
+      </div>
     </div>
   );
 }
